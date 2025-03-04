@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- He indicado que el archivo es un documento HTML5 -->
+<html lang="es"> <!-- He especificado que el idioma del documento es español -->
+<head> <!-- He creado la cabecera del documento -->
+    <meta charset="UTF-8"> <!-- He definido el conjunto de caracteres del documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- He añadido una etiqueta meta para que la página sea responsive -->
+    <title>Mapa Interactivo</title> <!-- He establecido el título de la página como "Mapa Interactivo" -->
+    <link rel="stylesheet" href="diseño mapa.css"> <!-- He enlazado una hoja de estilos CSS externa -->
+</head>
+<body>
+    <header class="cabecera"> <!-- He creado una cabecera con clase cabecera -->
+        <!-- Contenedor de la izquierda (logo y enlaces) -->
+        <div class="izquierda">
+            <img src="logo.png" alt="Logo" class="logo"> <!-- He puesto la foto del logo -->
+            <!-- Menú de navegación -->
+            <nav> <!-- He creado una navegación y dentro sus respectivos enlaces -->
+                <a href="Historia.html">Historia</a>
+                <a href="Mythologiae.html">Mythologiae</a>
+                <a href="Atención al cliente.html">Atención al cliente</a>
+                <a href="Contacto.php">Contáctenos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor principal con scroll snapping -->
+    <div class="contenedor-principal">
+        <!-- Sección 1 -->
+        <div class="seccion" id="seccion1">
+            <h1>Bienvenido al Mapa Interactivo</h1>
+            <p>Explora los diferentes lugares y mitologías en nuestro mapa.</p>
+        </div>
+
+        <!-- Sección 2 (Mapa) -->
+        <div class="seccion" id="seccion2">
+            <div class="contenedor-mapa">
+                <img src="mapa.png" alt="Mapa" class="mapa">
+            </div>
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="seccion" id="seccion3">
+            <h1>Descubre las Historias</h1>
+            <p>Sumérgete en las historias y leyendas de cada región.</p>
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="seccion" id="seccion4">
+            <h1>Únete a la Comunidad</h1>
+            <p>Conéctate con otros entusiastas de la mitología.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript -->
+</body>
+</html>

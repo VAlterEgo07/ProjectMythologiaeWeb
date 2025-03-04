@@ -1,0 +1,156 @@
+/* Estilos de la cabecera */
+.cabecera {
+    display: flex; /* Activa Flexbox */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #2a1887; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 20px; /* Espaciado interno */
+}
+
+/* Contenedor de la izquierda (logo y enlaces) */
+.izquierda {
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Centra verticalmente el logo y los enlaces */
+    gap: 20px; /* Espacio entre el logo y los enlaces */
+}
+
+/* Estilos para los enlaces */
+nav {
+    display: flex; /* Activa Flexbox para alinear los enlaces horizontalmente */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    transition: background-color 0.6s ease; /* Transición suave */
+    border-radius: 4px; /* Redondeado de bordes */
+    padding: 5px 10px; /* Ajusta el padding para que se vea mejor */
+    font-size: 20px; /* Tamaño de letra */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Cambia el color de fondo de los enlaces al pasar el cursor */
+nav a:hover {
+    background-color: #61164d; /* Nuevo color de fondo al hacer hover */
+    padding: 5px 10px; /* Ajusta el padding para que se vea mejor */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Logo de la página */
+.logo {
+    border-radius: 50px; /* Redondeado de bordes */
+    width: 70px;
+    height: auto;
+}
+
+body { 
+    justify-content: center;                                             /* He centrado el contenido en el cuerpo */
+    align-items: center;                                                 /* He alineado los elementos en el centro */
+    height: 100vh;                                                       /* He hecho que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0;                                                           /* He eliminado los márgenes predeterminados */
+    color: white;                                                      /* He elegido el color blanco para el texto */
+    background-color: rgb(55, 36, 77);                                      /* He puesto un fondo oscuro */
+    overflow: hidden;                                                    /* Deshabilita el desplazamiento vertical y horizontal */
+} 
+
+.contenido { 
+    display: flex;                                                       /* He usado un diseño de flexbox para el contenedor */
+    align-items: center;                                                 /* He alineado los elementos en el centro verticalmente */
+    justify-content: center;                                             /* He centrado los elementos horizontalmente */
+} 
+
+label {
+    text-align: center;                                                  /* He centrado el texto de las etiquetas */
+}
+
+form { 
+    display: flex;                                                       /* He utilizado un diseño de flexbox para el formulario */
+    flex-direction: column;                                              /* He dispuesto los elementos en columna */
+    align-items: center;                                                 /* He centrado los elementos verticalmente */
+    width: 500px;                                                        /* He definido el ancho del formulario */
+    font-size: 25px;                                                     /* He establecido el tamaño de la fuente para los elementos del formulario */
+} 
+
+label, input, textarea, button { 
+    margin: 10px 0;                                                      /* He añadido márgenes para separar los elementos */
+}
+
+/* Estilos para el botón de tipo input con la clase register */
+input[type="submit"].register {
+    background-color: #04e155; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Elimina el borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Cambia el color de fondo del botón al pasar el cursor */
+input[type="submit"].register:hover {
+    background-color: #03a43a; /* Color de fondo más oscuro al hacer hover */
+}
+
+#formMessage {
+    margin-top: 20px;                                                    /* He añadido un margen superior al mensaje del formulario */
+}
+
+table {
+    margin: 0 auto;                                                      /* He centrado la tabla */
+    border: 2px solid;                                                   /* He añadido un borde alrededor de la tabla */
+    padding: 20px;                                                       /* He añadido un relleno interno para separar el contenido */
+    background-color: #2a1887; /* Color de fondo */                                        /* He puesto un fondo gris claro */
+    border-radius: 10px;                                                 /* He redondeado las esquinas de la tabla */
+}
+
+td {
+    border: none;                                                        /* He eliminado los bordes de las celdas */
+}
+
+.hidden {
+    display: none;                                                       /* He ocultado los elementos con la clase 'hidden' */
+}
+
+input {
+    width: 300px;                                                        /* He establecido un ancho fijo para los campos de entrada */
+    height: 70px;                                                        /* He definido una altura para los campos de entrada */
+    border-radius: 10px;                                                 /* He redondeado las esquinas de los campos de entrada */
+}
+
+textarea {
+    width: 300px;                                                        /* He establecido un ancho fijo para los campos de texto */
+    height: 70px;                                                        /* He definido una altura para los campos de texto */
+}
+
+input, textarea { 
+    font-family: 'Arial', sans-serif;                                    /* He establecido la fuente para los campos de entrada y texto */
+    font-size: 20px;                                                     /* He establecido el tamaño de la fuente */
+    padding: 10px;                                                       /* He añadido relleno para mejorar la apariencia */
+    border-radius: 10px;                                                 /* He redondeado las esquinas de los campos */
+}
+
+footer {                                                  /* He añadido un margen superior al pie de página */
+    margin-bottom: 50px;                                                 /* He añadido un margen inferior al pie de página */
+}
+
+.ok {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #4e8;
+    color: #fff;
+}
+
+.bad {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #a22;
+    color: #fff;
+}
